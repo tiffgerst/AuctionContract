@@ -1,0 +1,190 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+    "txHash": "0x74b7177564b88555f7fa609024bdbb01fb490ec631f9947d2192a5210f5bc04b"
+  },
+  "proxies": [
+    {
+      "address": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
+      "txHash": "0xfacfb611917d2f342397410e70b49309fe2d63898faa1910af3a6c821f315e9f",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9",
+      "txHash": "0x557dbc4e9289d19eccf19bfb0caf733799c12888cab830802bac41fc0a0b3cd2",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707",
+      "txHash": "0xe877e904da7b86999ebf32bb0307a53306147939eb8ee45ab31cc9cfa60315ce",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x0165878A594ca255338adfa4d48449f69242Eb8F",
+      "txHash": "0x3c7c54cc9b4a356329fa79ca22ebd7de514a4e32eb0a5af7c7f3ef8a5eb40041",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xa513E6E4b8f2a923D98304ec87F64353C4D5C853",
+      "txHash": "0x13f9fe37ee583416935d1f4e98ff1067ae310342a5e3a64039ef325594e8b81b",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x2279B7A0a67DB372996a5FaB50D91eAA73d2eBe6",
+      "txHash": "0xd74a852a450d02b0fdc3dd2820d37bb7427b0ec9921acbe8d34f43c044b32965",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x8A791620dd6260079BF849Dc5567aDC3F2FdC318",
+      "txHash": "0x4c0b49cda9c120b4f5296ca78a8c868f1852fbafada00f1d067dacbf2cfa72fa",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x610178dA211FEF7D417bC0e6FeD39F05609AD788",
+      "txHash": "0xb1eeb66e834cec0554f43391085bea654ad174a5b1dc2da6700b88ebd094f2b4",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xB7f8BC63BbcaD18155201308C8f3540b07f84F5e",
+      "txHash": "0xf2e6dbe67b73c89c94ca1eae5d9b544180ed7ae60d576b136325fc1007ba32bd",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xA51c1fc2f0D1a1b8494Ed1FE312d7C3a78Ed91C0",
+      "txHash": "0x8f2677ee8443b509743a56623996dcde870253857518fecf769d4f7fe49316de",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+      "txHash": "0xe79dbec0e2252ad07f3b8db6727cf22e786e33d08dd4b53428828e50611ee4cd",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "52bd4f422caa96b922164687e078f2ec85aba8c72ce7c5d7396c310913417481": {
+      "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      "txHash": "0xe2fa8afbd767a30d30e06c6f258ad96e192a6ed073146ec24f2e0633e98cef6a",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "endTime",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "Auction",
+            "src": "contracts/Auction.sol:7"
+          },
+          {
+            "label": "owner",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_address",
+            "contract": "Auction",
+            "src": "contracts/Auction.sol:8"
+          },
+          {
+            "label": "itemIDTohighestBid",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_uint256,t_uint256)",
+            "contract": "Auction",
+            "src": "contracts/Auction.sol:11"
+          },
+          {
+            "label": "itemIDTohighestBidder",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_mapping(t_uint256,t_address)",
+            "contract": "Auction",
+            "src": "contracts/Auction.sol:13"
+          },
+          {
+            "label": "items",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_array(t_struct(Item)604_storage)dyn_storage",
+            "contract": "Auction",
+            "src": "contracts/Auction.sol:27"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(Item)604_storage)dyn_storage": {
+            "label": "struct Auction.Item[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_uint256,t_address)": {
+            "label": "mapping(uint256 => address)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Item)604_storage": {
+            "label": "struct Auction.Item",
+            "members": [
+              {
+                "label": "id",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "desc",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "startingPrice",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
